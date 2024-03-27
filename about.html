@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzzcubes School - About</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-fG/V+GwY0OwbiDOJznS9unmC6ZxZtPtGc6YiUKom6+9EM18kgV5hpFlLO8LDbkVF3fBCOOQtxYG2YBrnVHPD7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #663399;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Content Styles */
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #663399;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        /* Moto Styles */
+        .motto {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Additional Info Styles */
+        .additional-info {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="admissions.html"><i class="fas fa-graduation-cap"></i> Admissions</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h1>About Buzzcubes School</h1>
+        <p>Buzzcubes School is dedicated to providing high-quality education to students.</p>
+        <p>We aim to foster an environment that encourages creativity, critical thinking, and lifelong learning.</p>
+        <p class="motto">"Aao Padho" - Let's Learn Together</p> <!-- Added school motto -->
+        
+        <!-- Button to Toggle Additional Information -->
+        <button onclick="toggleInfo()">Show Additional Information</button>
+        <div class="additional-info" id="additionalInfo">
+            <p>At Buzzcubes School, we have a track record of academic excellence and a commitment to holistic education.</p>
+            <p>Our programs are designed to nurture students' talents and prepare them for success in the modern world.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // JavaScript for the about page
+        console.log("Hello from the about page JavaScript!");
+
+        // Function to toggle additional information
+        function toggleInfo() {
+            var info = document.getElementById("additionalInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
